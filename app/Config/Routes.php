@@ -33,6 +33,12 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+// API Group
+$routes->group('api', ['namespace' => 'App\Controllers\API'], function($routes){
+    $routes->get('tickets', 'Tickets::index');
+    $routes->post('tickets/create', 'Tickets::createTicket');
+});
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
