@@ -23,8 +23,8 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/api-rfid-estacionamiento';
-
+    public $baseURL = 'http://localhost/api-rfid-estacionamiento/';
+    //public $baseURL = 'http://rfid.itspa.ezyro.com/';
     /**
      * --------------------------------------------------------------------------
      * Index File

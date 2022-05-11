@@ -24,9 +24,9 @@ class Tickets extends ResourceController
             if ($this->ticketModel->checkIfExistTag($tag)) {
                 $user = $this->ticketModel->getUserByTag($tag);
                 $this->ticketModel->createNewTicket($user, $ticketType);
-                return $this->respondCreated('ok');
+                return $this->respondCreated('ok con tag');
             } else {
-                return $this->respondCreated('ok');
+                return $this->respondCreated('ok sin tag');
             }
         } catch (\Exception $e) {
             return $this->failServerError('Ha ocurrido un error.');

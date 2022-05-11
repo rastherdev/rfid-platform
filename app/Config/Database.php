@@ -50,6 +50,26 @@ class Database extends Config
         'port'     => 3306,
     ];
 
+    // public $default = [
+    //     'DSN'      => '',
+    //     'hostname' => 'sql207.ezyro.com',
+    //     'username' => 'ezyro_31670155',
+    //     'password' => 'v7kkz7pgju',
+    //     'database' => 'ezyro_31670155_rfid_platform',
+    //     'DBDriver' => 'MySQLi',
+    //     'DBPrefix' => '',
+    //     'pConnect' => false,
+    //     'DBDebug'  => (ENVIRONMENT !== 'production'),
+    //     'charset'  => 'utf8',
+    //     'DBCollat' => 'utf8_general_ci',
+    //     'swapPre'  => '',
+    //     'encrypt'  => false,
+    //     'compress' => false,
+    //     'strictOn' => false,
+    //     'failover' => [],
+    //     'port'     => 3306,
+    // ];
+
     /**
      * This database connection is used when
      * running PHPUnit database tests.
